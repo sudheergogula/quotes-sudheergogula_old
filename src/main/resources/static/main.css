@@ -1,0 +1,37 @@
+.wrapper {text-align: center;}
+
+blockquote {
+    position: relative;
+    /* background: #ddd; */
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+blockquote:before {
+  position: absolute;
+  content: open-quote;
+  font-size: 3em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+blockquote:after {
+  position: absolute;
+  content: close-quote;
+  font-size: 3em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+blockquote p {
+  display: inline;
+    text-align: left;
+}
+
+.carousel-control.right {
+  background-image: none
+}
+
+.carousel-control.left {
+  background-image: none
+}
