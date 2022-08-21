@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quotes-app-deployment
+  labels:
+    app: quotes-app
+spec:
+  replicas: 4
+  template:
+    metadata:
+      name: quotes-app-pod
+      labels:
+        app: quotes-app
+    spec:
+      containers:
+        - name: quotes-app-container
+          image: gogulasudheer/i-sudheergogula
+          envFrom:
+            - configMapRef:
+                name: quotes-config
+            - secretRef:
+                name: quotes-secret
+  selector:
+    matchLabels:
+      app: quotes-app

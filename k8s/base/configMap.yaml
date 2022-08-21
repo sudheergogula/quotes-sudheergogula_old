@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: quotes-config
+  labels:
+    app: quotes-app
+data:
+  QUOTES_DATASOURCE: jdbc:h2:mem
+  QUOTES_DATASOURCE_DB_NAME: quotesdb
+  QUOTES_DATASOURCE_DRIVER: org.h2.Driver
+  QUOTES_DATABASE-DIALECT: org.hibernate.dialect.H2Dialect
