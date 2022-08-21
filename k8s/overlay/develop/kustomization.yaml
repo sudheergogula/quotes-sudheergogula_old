@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+namePrefix: develop-
+commonLabels:
+  app: develop-quotes-app
+images:
+  - name: gogulasudheer/i-sudheergogula
+    newName: gogulasudheer/i-sudheergogula-develop
+    newTag: latest
+

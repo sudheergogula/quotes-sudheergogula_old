@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+namePrefix: master-
+commonLabels:
+  app: master-quotes-app
+images:
+  - name: gogulasudheer/i-sudheergogula
+    newName: gogulasudheer/i-sudheergogula-master
+    newTag: latest
